@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>قالب شرکتی سریوان</title>
+    <link rel="icon" href="./images/cropped-dark-logo-32x32.png">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.4.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+<header class="header d-block d-md-flex align-items-md-center">
+    <div class="logo-box">
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+    </div>
+    <div class="nav-wrapper">
+        <div class="nav-box">
+           <div class="sub-nav-box">
+               <div class="close-box"><button class="btn btn-dark text-white close-btn"><span class="fa fa-close"></span></button></div>
+               <ul class="top-nav d-block d-lg-flex align-items-lg-center justify-content-lg-between">
+                   <li class="item-menu">
+                       <a href="#">
+                           خانه
+                           <i class="fa fa-chevron-down mr-2"></i>
+                       </a>
+                       <div class="sub-menu">
+                           <h3 class="w-200 text-right font-14">قالب شرکتی سریوان دموی دوم</h3>
+                       </div>
+                   </li>
+                   <li class="item-menu">
+                       <a href="#">
+                           وبلاگ
+                           <i class="fa fa-chevron-down mr-2"></i>
+                       </a>
+                       <div class="sub-menu">
+                           <h3 class="w-300 text-right font-14">کیفیت خدمات پس از فروش سریوان اتفاقی نیست!</h3>
+                       </div>
+                   </li>
+                   <li class="item-menu">
+                       <a href="#">
+                           محصولات
+                           <i class="fa fa-chevron-down mr-2"></i>
+                       </a></li>
+                   <li class="item-menu">
+                       <a href="#">
+                           پروژه ها
+                           <i class="fa fa-chevron-down mr-2"></i>
+                       </a>
+                       <div class="sub-menu">
+                           <h3 class="w-200 text-right font-14">پروژه ساختن بتن آرمه</h3>
+                       </div>
+                   </li>
+                   <li>
+                       <a href="#">
+                           برگه ها
+                           <i class="fa fa-chevron-down mr-2"></i>
+                       </a>
+                   </li>
+               </ul>
+               <div class="profile-box"><div class="d-flex align-items-center">
+                   <div  class="d-flex align-items-center text-black">
+                       <div class="ml-3">
+                           <span class="d-block">شماره تماس</span>
+                           <span dir="ltr" class="farsiDigit">09132233223</span>
+                       </div>
+                       <span class="fa fa-phone"></span>
+                   </div>
+               </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <a href="#" class="card-box">
+        <div>
+            <span class="fa fa-shopping-basket"></span>
+        </div>
+        <div class="sub-card">
+            <span class="d-block fa fa-shopping-bag text-center w-100 font-17"></span>
+            <h3 class="font-17 text-center text-dark mt-4">سبد خرید شما خالی است.</h3>
+            <button class="btn btn-red text-white w-200 mr-auto ml-auto mt-4">به فروشگاه بروید</button>
+        </div>
+    </a>
+
+    <button class="mobile  btn btn-dark text-white"><span class="fa fa-bars"></span></button>
+</header>
+<section  class="top-box text-right">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1 class="text-white mt-4 font-22">بزرگترین تولید کننده ی ابزارآلات</h1>
+                <p class="text-white mt-4 font-17 line-height-40">
+                    متخصصان ما در اونیکس با تعهد و پشتکار، همواره در تلاشند تا با استفاده از جدیدترین تکنولوژی‌ها
+                    و نوآوری‌ها، بهترین ابزارآلات را برای نیازهای مختلف شما طراحی
+                    و تولید کنند. ما به کیفیت محصولات خود اطمینان کامل داریم
+                    و به همین دلیل، تمامی محصولاتمان را با ضمانت ارائه می‌دهیم..
+                </p>
+                <a href="#" class="btn btn-dark text-white font-14 w-200 mt-3">مشاهده محصولات</a>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="./images/hero-1.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<main class="main p-2">
+    <section class="container-fluid">
+        <section class="category-box">
+            <div class="title-box d-flex align-items-center justify-content-between">
+                <h3>دسته بندی محصولات</h3>
+                <div class="border-dash w-50"></div>
+                <div class="d-flex align-items-center justify-content-between" style="width: 100px;">
+                    <button class="btn btn-lightgrey" id="next"><i class="fa fa-arrow-right"></i></button>
+                    <button class="btn btn-red" id="prev"><i class="fa fa-arrow-left"></i></button>
+                </div>
+            </div>
+            <div dir="rtl" class="catItems-box">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                         <div class="cat-item d-flex flex-column align-items-center justify-content-center">
+                                <img src="./images/flatico/paint-tool.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <h3 class="font-14 mt-3">ابزارآلات جابجایی</h3>
+                                <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
+
+                            </div></div>
+                        <div class="swiper-slide">
+                            <div class="cat-item d-flex flex-column align-items-center justify-content-center">
+                                <img src="./images/flatico/driller.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <h3 class="font-14 mt-3">ابزارآلات شارژی</h3>
+                                <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
+
+                            </div></div>
+                        <div class="swiper-slide">
+                            <div class="cat-item d-flex flex-column align-items-center justify-content-center">
+                                <img src="./images/flatico/paint-tool.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <h3 class="font-14 mt-3">ابزارآلات جابجایی</h3>
+                                <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
+
+                            </div></div>
+                        <div class="swiper-slide">
+                            <div class="cat-item d-flex flex-column align-items-center justify-content-center">
+                                <img src="./images/flatico/driller.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <h3 class="font-14 mt-3">ابزارآلات شارژی</h3>
+                                <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
+
+                            </div></div>
+                        <div class="swiper-slide">
+                            <div class="cat-item d-flex flex-column align-items-center justify-content-center">
+                                <img src="./images/flatico/paint-tool.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <h3 class="font-14 mt-3">ابزارآلات جابجایی</h3>
+                                <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
+
+                            </div></div>
+                        <div class="swiper-slide">
+                            <div class="cat-item d-flex flex-column align-items-center justify-content-center">
+                                <img src="./images/flatico/driller.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <h3 class="font-14 mt-3">ابزارآلات شارژی</h3>
+                                <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
+
+                            </div></div>
+                    </div>
+
+                </div>
+            </div>
+
+             </section>
+<!--        ..........................-->
+        <section class="projects-box mt-5">
+            <div class="title-box d-flex align-items-center justify-content-between mb-2">
+                <h3>پروژه های ما</h3>
+                <div class="border-dash w-50"></div>
+                <div class="d-flex align-items-center justify-content-between" style="width: 100px">
+                    <button class="btn btn-lightgrey" id="project_next"><i class="fa fa-arrow-right"></i></button>
+                    <button class="btn btn-red" id="project_prev"><i class="fa fa-arrow-left"></i></button>
+                </div>
+                <a href="#" class="btn btn-lightgrey text-dark font-17">مشاهده همه</a>
+            </div>
+            <div class="projItems-box">
+                <div class="project-item position-relative">
+                    <img src="./images/projects-images/p1.jpg" class="img-fluid h-100" alt="">
+                    <div class="project-des project-des-info border border-danger">
+                        <button class="btn btn-red btn-sm"><span class="fa fa-arrow-left"></span></button>
+                        <h3 class="">پروژه ساخت بلن آرمه</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    ........................................-->
+        <section class="safety-tools-box mt-5">
+            <div class="title-box d-flex align-items-center justify-content-between mb-2">
+                <h3>تجهیزات ایمنی</h3>
+                <div class="border-dash w-50"></div>
+                <div class="d-flex align-items-center justify-content-between position-relative" style="width: 100px">
+                    <button class="btn btn-lightgrey" id="safety_next"><i class="fa fa-arrow-right"></i></button>
+                    <button class="btn btn-red" id="safety_prev"><i class="fa fa-arrow-left"></i></button>
+                </div>
+                <a href="#" class="btn btn-lightgrey text-dark font-17">مشاهده همه</a>
+            </div>
+            <div class="swiper safetyTool-items">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="safetyTool-item p-4 shadow-lg bg-light rounded-lg position-relative">
+                        <div class="position-relative mb-4 rounded bg-lightgrey p-3">
+                            <img src="./images/safety-tools/drill.webp" class="d-block img-fluid mr-auto ml-auto" width="128" height="128" alt="">
+                            <span class="price-off farsiDigit bg-red text-white font-12">10%</span>
+                        </div>
+                        <h3 class="farsiDigit font-17 text-right mb-4">دریل چکشی دیوالت مدل Dvv8S2 </h3>
+                        <div class="d-flex align-items-center mb-4">
+                            <span class="farsiDigit text-dark font-14 line-center ml-2">20,000,000 تومان</span>
+                            <span class="farsiDigit text-red font-14">18,000,000 تومان</span>
+                        </div>
+                        <hr class="d-block border-dash w-200 mb-4 mr-auto ml-auto">
+                        <div class="safetyTool-pey d-flex align-items-center justify-content-between">
+                            <span class="font-14 farsiDigit text-black">سفارش:0</span>
+                            <span class="font-14 farsiDigit text-black">باقیمانده:994</span>
+                        </div>
+                        <a href="#" class="product-view btn btn-red text-white font-14 w-50 mt-4 ml-auto mr-auto">مشاهده محصول</a>
+                    </div></div>
+                    <div class="swiper-slide"><div class="safetyTool-item p-4 shadow-lg bg-light rounded-lg position-relative">
+                        <div class="position-relative mb-4 rounded bg-lightgrey p-3">
+                            <img src="./images/safety-tools/safe-glasses.png" class="d-block img-fluid mr-auto ml-auto" width="128" height="128" alt="">
+                            <span class="price-off farsiDigit bg-red text-white font-12">10%</span>
+                        </div>
+                        <h3 class="farsiDigit font-17 text-right mb-4">عینک ایمنی جوشکاری مدل 21</h3>
+                        <div class="d-flex align-items-center mb-4">
+                            <span class="farsiDigit text-dark font-14 line-center ml-2">69،000 تومان</span>
+                            <span class="farsiDigit text-red font-14">62،000 تومان</span>
+                        </div>
+                        <hr class="d-block border-dash w-200 mb-4 mr-auto ml-auto">
+                        <div class="safetyTool-pey d-flex align-items-center justify-content-between">
+                            <span class="font-14 farsiDigit text-black">سفارش:0</span>
+                            <span class="font-14 farsiDigit text-black">باقیمانده:994</span>
+                        </div>
+                        <a href="#" class="product-view btn btn-red text-white font-14 w-50 mt-4 ml-auto mr-auto">مشاهده محصول</a>
+                    </div></div>
+                </div>
+
+
+            </div>
+        </section>
+<!--        ...............................................-->
+        <section dir="rtl" class="catalog-box mt-5 p-5 bg-red round-10 text-right">
+            <div class="catalog-item">
+                <h3 class="font-17 text-white mb-2">دریافت رایگان کاتالوگ محصولات سریوان</h3>
+                <p class="font-14 text-white mb-2">
+                    با بیش از ۲۰۰۰ نوع ابزار مختلف و ۲۴۰۰۰ نوع قطعات یدکی، ما در کنار شما هستیم تا تقریباً هر کاری را انجام دهید.
+                </p>
+                <a href="#" class="btn btn-dark text-white font-17">دریافت کاتالوگ</a>
+            </div>
+        </section>
+<!--        ...........................................................-->
+        <section class="brands-box d-flex align-items-md-center p-3 bg-red round-10 text-right mt-5">
+           <div class="brand-item">
+               <img src="./images/brands/tosan.png" width="120" height="40" class="d-block img-fluid" alt="">
+           </div>
+           <div class="brand-item">
+               <img src="./images/brands/ronix.png" width="120" height="40" class="d-block img-fluid" alt="">
+           </div>
+        </section>
+<!--       ......................................................................-->
+        <section class="team-box mt-5 p-3">
+            <div class="title-box d-flex align-items-center mb-2">
+                <h3>تیم ما</h3>
+                <div class="border-dash w-75 mr-auto ml-auto"></div>
+            </div>
+            <section class="swiper teamElements-box mt-5 p-3">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="element-item round-10 shadow-lg position-relative">
+                        <img src="./images/team/programmer.png" class="img-fluid d-block" alt="">
+                        <div class="social-box d-flex flex-column justify-content-start align-items-center bg-red">
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/linkedin.png" class="img-fluid" alt="">
+                            </a>
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/github.png" class="img-fluid" alt="">
+                            </a>
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/telegram.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="border border-dash"></div>
+                        <div class="text-red font-17 mb-2 text-center">سامان عزیزی</div>
+                        <div class="text-dark font-17 mb-2 text-center">برنامه نویس</div>
+                    </div></div>
+                    <div class="swiper-slide"><div class="element-item round-10 shadow-lg position-relative">
+                        <img src="./images/team/programmer.png" class="img-fluid d-block" alt="">
+                        <div class="social-box d-flex flex-column justify-content-start align-items-center bg-red">
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/linkedin.png" class="img-fluid" alt="">
+                            </a>
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/github.png" class="img-fluid" alt="">
+                            </a>
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/telegram.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="border border-dash"></div>
+                        <div class="text-red font-17 mb-2 text-center">سامان عزیزی</div>
+                        <div class="text-dark font-17 mb-2 text-center">برنامه نویس</div>
+                    </div></div>
+                    <div class="swiper-slide"><div class="element-item round-10 shadow-lg position-relative">
+                        <img src="./images/team/programmer.png" class="img-fluid d-block" alt="">
+                        <div class="social-box d-flex flex-column justify-content-start align-items-center bg-red">
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/linkedin.png" class="img-fluid" alt="">
+                            </a>
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/github.png" class="img-fluid" alt="">
+                            </a>
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/telegram.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="border border-dash"></div>
+                        <div class="text-red font-17 mb-2 text-center">سامان عزیزی</div>
+                        <div class="text-dark font-17 mb-2 text-center">برنامه نویس</div>
+                    </div></div>
+                    <div class="swiper-slide"><div class="element-item round-10 shadow-lg position-relative">
+                        <img src="./images/team/programmer.png" class="img-fluid d-block" alt="">
+                        <div class="social-box d-flex flex-column justify-content-start align-items-center bg-red">
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/linkedin.png" class="img-fluid" alt="">
+                            </a>
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/github.png" class="img-fluid" alt="">
+                            </a>
+                            <a href="#" class="btn" style="width: 40px;height: 40px;">
+                                <img src="./images/flatico/telegram.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="border border-dash"></div>
+                        <div class="text-red font-17 mb-2 text-center">سامان عزیزی</div>
+                        <div class="text-dark font-17 mb-2 text-center">برنامه نویس</div>
+                    </div></div>
+
+                </div>
+
+
+            </section>
+        </section>
+<!--        .........................................................-->
+        <section class="representation-box mt-5 p-3">
+            <div class="title-box d-flex align-items-center justify-content-between mb-2">
+                <h3>نمایندگی ما</h3>
+                <div class="border-dash w-75 mr-auto ml-auto"></div>
+            </div>
+            <div class="row bg-lightgrey p-5">
+                <div class="representation-items col-12 col-md-6">
+                    <div class="representation-item bg-light rounded-lg shadow-lg p-3">
+                        <div class="d-flex align-items-center border-dash p-2 mb-2">
+                            <img src="./images/Ellipse-38-1.png" alt="" class="rounded rounded-circle">
+                            <span class="font-17 text-black mr-2">استان خراسان رضوی</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2 p-3">
+                            <span class="fa fa-location-dot text-danger ml-1"></span>
+                            <span class="text-black font-14 text-right farsiDigit">
+                                خیابان چمران، نبش گلشن، نرسیده به میدان، پلاک 24
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2 p-3">
+                            <span class="fa fa-phone text-danger ml-1"></span>
+                            <span class="farsiDigit font-14 text-black pl-2">044-43223213</span>
+                            <span class="farsiDigit font-14 text-red border-right px-2">09138574322</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6"></div>
+            </div>
+        </section>
+<!--        ....................................................-->
+        <section class="weblog-box mt-5 p-3">
+            <div class="title-box d-flex align-items-center justify-content-between mb-2">
+                <h3>وبلاگ ما</h3>
+                <div class="border-dash w-50"></div>
+                <div class="d-flex align-items-center justify-content-between" style="width: 100px">
+                    <button class="btn btn-lightgrey" id="weblog-next"><i class="fa fa-arrow-right"></i></button>
+                    <button class="btn btn-red" id="weblog-prev"><i class="fa fa-arrow-left"></i></button>
+                </div>
+                <a href="#" class="btn btn-lightgrey text-dark font-17">مشاهده همه</a>
+            </div>
+            <div class="blog-items p-2">
+                <div class="blog-item w-300 round-10 position-relative overflow-hidden">
+                    <img src="./images/hardware-event.png" class="d-block" alt="">
+                    <div class="blog-info px-2 py-3">
+                        <h3 class="font-14 text-right text-white">بزرگترین ویداد سخت افزاری جهان</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button class="btn bg-red text-white font-12 shadow p-2 farsiDigit">
+                                <span class="fa fa-calendar"></span>
+                                خرداد 1404
+                            </button>
+                           <button class="btn text-center text-white farsiDigit">
+                               <span class="fa fa-eye"></span>
+                               406
+                           </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--        .....................................................-->
+    </section>
+</main>
+<footer class="text-white farsiDigit bg-dark p-3">
+    <div class="row">
+        <div class="col-12 col-md-3">
+            <h3 class="font-17 text-right">لینک های مفید</h3>
+            <ul class="d-flex flex-column flex-wrap" style="height: 150px;">
+                <li class="w-50 py-2"><a href="#" class="d-block text-right font-14 footer-link">قالب شرکتی سریوان</a></li>
+                <li class="w-50 py-2"><a href="#" class="d-block text-right font-14 footer-link">برگه نمونه</a></li>
+                <li class="w-50 py-2"><a href="#" class="d-block text-right  font-14 footer-link">حساب کاربری من</a></li>
+                <li class="w-50 py-2"><a href="#" class="d-block text-right  font-14 footer-link">فروشگاه</a></li>
+                <li class="w-50 py-2"><a href="#" class="d-block text-right  font-14 footer-link">آرشیو مقالات</a></li>
+                <li class="w-50 py-2"><a href="#" class="d-block text-right  font-14 footer-link">پرداخت</a></li>
+                <li class="w-50 py-2"><a href="#" class="d-block text-right  font-14 footer-link">سبد خرید</a></li>
+                <li class="w-50 py-2"><a href="#" class="d-block text-right  font-14 footer-link">همکاران ما</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-4">
+            <a href="#" class="mb-2 d-block"><img src="./images/logo.png" class="d-block" alt=""></a>
+            <p class="text-justify text-white font-14" style="line-height: 30px;">
+                گروه صنعتی سریوان با سابقه‌ای درخشان در تولید و عرضه ابزارآلات دستی و برقی، به عنوان یکی از بزرگترین تولیدکنندگان ابزارآلات در ایران و شناخته می‌شود. ما در سریوان، با تعهد به ارائه محصولات باکیفیت، بادوام همواره در تلاشیم تا نیازهای متنوع مشتریان خود در سراسر کشور را برآورده سازیم.گروه صنعتی سریوان با سابقه‌ای درخشان در تولید و عرضه ابزارآلات دستی و برقی، به عنوان یکی از بزرگترین تولیدکنندگان ابزارآلات در ایران و شناخته می‌شود.گروه صنعتی سریوان با سابقه‌ای درخشان در تولید و عرضه ابزارآلات دستی و برقی، به عنوان یکی از بزرگترین تولیدکنندگان ابزارآلات در ایران و شناخته می شود.
+
+                گروه صنعتی سریوان با سابقه‌ای درخشان در تولید و عرضه ابزارآلات دستی و برقی، به عنوان یکی از بزرگترین تولیدکنندگان ابزارآلات در ایران و شناخته می‌شود. ما در سریوان، با تعهد به ارائه محصولات باکیفیت، بادوام همواره در تلاشیم تا نیازهای متنوع مشتریان خود در سراسر کشور را برآورده سازیم.گروه صنعتی سریوان با سابقه‌ای درخشان در تولید و عرضه ابزارآلات دستی و برقی، به عنوان یکی از بزرگترین تولیدکنندگان ابزارآلات در ایران و شناخته می‌شود.گروه صنعتی سریوان با سابقه‌ای درخشان در تولید و عرضه ابزارآلات دستی و برقی، به عنوان یکی از بزرگترین تولیدکنندگان ابزارآلات در ایران و شناخته می شود.
+            </p>
+        </div>
+        <div class="col-12 col-md-5">
+            <h3 class="font-17 text-right">نشانی ما</h3>
+            <div class="d-flex align-items-center justify-content-between py-3">
+                <span class="text-white font-14">دفتر مرکزی</span>
+                <span class="text-white font-14 farsiDigit">خیابان حافظ، ابتدای خیابان جامی، پلاک 16</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between py-3">
+                <span class="text-white font-14">ایمیل پشتیبانی</span>
+                <span class="text-white font-14">serione@onixdeo.ir</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between py-3">
+                <span class="text-white font-14">شماره های تماس</span>
+                <span class="text-white font-14 farsiDigit">021-33334849</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between py-3">
+                <span class="text-white font-14">شبکه های اجتماعی</span>
+                <div dir="ltr" class="d-flex align-items-center">
+                    <a href="#" class="d-block text-white mr-2"><img src="./images/flatico/telegram.png" class="brightness" width="20" height="20" alt=""></a>
+                    <a href="#" class="d-block text-white mr-2"><img src="./images/flatico/whatsapp.png" class="brightness" width="20" height="20" alt=""></a>
+                    <a href="#" class="d-block text-white mr-2"><img src="./images/flatico/linkedin.png" class="brightness" width="20" height="20" alt=""></a>
+                    <a href="#" class="d-block text-white mr-2"><img src="./images/flatico/facebook.png" class="brightness" width="20" height="20" alt=""></a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="d-flex flex-wrap align-items-center" style="width: 600px;">
+                    <button class="btn btn-dark text-white font-14 border-white shadow-grey w-200 line-height-40 ml-2 mb-2">
+                        <i class="fa fa-percent"></i>
+                        ارسال رایگان به تهران
+                    </button>
+                    <button class="btn btn-dark text-white font-14 border-white shadow-grey w-200 line-height-40 ml-2 mb-2">
+                        <i class="fa fa-legal"></i>
+                        ضمانت با گارانتی
+                    </button>
+                    <button class="btn btn-dark text-white font-14 border-white shadow-grey w-200 line-height-40 ml-2 mb-2">
+                        <i class="fa fa-clock"></i>
+                        پشتیبانی سریع
+                    </button>
+                    <button class="btn btn-dark text-white font-14 border-white shadow-grey w-200 line-height-40 ml-2">
+                        <i class="fa fa-comment-dots"></i>
+                        محصولات با کیفیت
+                    </button>
+                </div>
+                <div class="img-cover round-10"><img src="./images/enmad.png" width="100"  alt=""></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--js-->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+
+<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: "#next",
+            prevEl: "#prev",
+        },
+    });
+    // ................
+    let safetyTool_items = new Swiper(".safetyTool-items", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: "#safety_next",
+            prevEl: "#safety_prev",
+        },
+    });
+    //-----------------------------------------------------------
+    let teamElementsBox=new Swiper(".teamElements-box", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
+    //..............................................................
+    let representationItems=new Swiper(".representation-items", {
+        direction: "vertical",
+        slidesPerView: 3,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
+</script>
+</body>
+</html>
