@@ -3,6 +3,18 @@ let closeBtn=document.querySelector('.close-btn');
 let navBox=document.querySelector('.nav-box');
 let navWrapper=document.querySelector('.nav-wrapper');
 
+
+//..............................................
+let itemMenu=$(".item-menu");
+itemMenu.hover(function(){
+        $(this).find(".sub-menu").slideDown();
+
+},function (){
+        $(this).find(".sub-menu").slideUp();
+    }
+    );
+
+
 //............................................
 let flag=true;
 let projectItem=document.querySelector('.project-des');

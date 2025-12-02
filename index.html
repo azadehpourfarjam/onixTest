@@ -54,27 +54,39 @@
                            <h3 class="w-200 text-right font-14">پروژه ساختن بتن آرمه</h3>
                        </div>
                    </li>
-                   <li>
+                   <li class="item-menu">
                        <a href="#">
                            برگه ها
                            <i class="fa fa-chevron-down mr-2"></i>
                        </a>
+                       <div class="sub-menu">
+                           <ul>
+                               <li><a href="#" class="d-block w-100 font-14 text-right">حساب کاربری من</a></li>
+                               <li><a href="#" class="d-block w-100 font-14 text-right">پرداخت</a></li>
+                               <li><a href="#" class="d-block w-100 font-14 text-right">سبد خرید</a></li>
+                               <li><a href="#" class="d-block w-100 font-14 text-right">تماس با ما</a></li>
+                               <li><a href="#" class="d-block w-100 font-14 text-right">درباره ما</a></li>
+                           </ul>
+
+
+                       </div>
                    </li>
                </ul>
-               <div class="profile-box"><div class="d-flex align-items-center">
+               <div class="profile-box">
+                   <div class="d-flex align-items-center">
                    <div  class="d-flex align-items-center text-black">
                        <div class="ml-3">
-                           <span class="d-block">شماره تماس</span>
-                           <span dir="ltr" class="farsiDigit">09132233223</span>
+                           <span class="d-block text-white">شماره تماس</span>
+                           <span dir="ltr" class="farsiDigit text-white">09132233223</span>
                        </div>
-                       <span class="fa fa-phone"></span>
+                       <span class="fa fa-phone text-white"></span>
                    </div>
                </div>
                </div>
            </div>
         </div>
     </div>
-    <a href="#" class="card-box">
+    <a href="#" class="card-box mr-3">
         <div>
             <span class="fa fa-shopping-basket"></span>
         </div>
@@ -84,6 +96,7 @@
             <button class="btn btn-red text-white w-200 mr-auto ml-auto mt-4">به فروشگاه بروید</button>
         </div>
     </a>
+    <a href="#" class="btn btn-dark font-14 text-white font-weight-bold w-150 mr-3 line-height-40">ورود / ثبت نام</a>
 
     <button class="mobile  btn btn-dark text-white"><span class="fa fa-bars"></span></button>
 </header>
@@ -108,7 +121,7 @@
 </section>
 <main class="main p-2">
     <section class="container-fluid">
-        <section class="category-box">
+        <section class="category-box p-5 shadow-grey bg-white round-10">
             <div class="title-box d-flex align-items-center justify-content-between">
                 <h3>دسته بندی محصولات</h3>
                 <div class="border-dash w-50"></div>
@@ -738,11 +751,25 @@
 
 <script>
     let swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 10,
         navigation: {
             nextEl: "#next",
             prevEl: "#prev",
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
         },
     });
     // ................

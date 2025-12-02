@@ -35,6 +35,7 @@ ul{
     right: 0;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 .header>a{
 
@@ -46,13 +47,16 @@ ul{
 .sub-nav-box{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .nav-wrapper{
     /*flex: 1;*/
 }
 .mobile{
     display: none;
+}
+.nav-wrapper{
+    flex: 1;
 }
 
 .header .top-nav{
@@ -79,7 +83,7 @@ ul{
     font-size: 14px;
 }
 .sub-menu{
-    order-radius: 10px;
+    border-radius: 10px;
     padding: 10px;
     box-shadow: 1px 1px 3px #aaa , -1px -1px 3px #aaa;
     background-color: #fff;
@@ -87,6 +91,22 @@ ul{
     right: 0;
     top: calc(100% + 5px);
     display: none;
+}
+.sub-menu>ul>li{
+    width: 200px;
+    height: 40px;
+}
+.sub-menu>ul>li>a{
+    font-weight: 600;
+    color: black;
+    height: inherit;
+    line-height: 40px;
+    padding-right: 5px;
+    transition: all .5s ease;
+}
+.sub-menu>ul>li>a:hover{
+    background-color: #EC2426;
+    border-radius: 10px;
 }
 .top-box{
     background-color: #EC2426;
@@ -140,6 +160,9 @@ ul{
 .w-100{
     width: 100px;
 }
+.w-150{
+    width: 150px;
+}
 .w-200{
     width: 200px;
 }
@@ -187,6 +210,16 @@ ul{
     position: absolute;
     right:0;
     top: calc(50% - 2px);
+}
+.main{
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
+}
+.category-box{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .cat-item{
     width: 150px;
@@ -258,7 +291,12 @@ ul{
     right:calc(50% - 80px);
     transition: all .5s ease;
 }
-@media (max-width: 991.99px) {
+@media (max-width: 991.98px) {
+    .category-box{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .logo-box{
         width: 100%;
         display: flex;
