@@ -96,7 +96,7 @@
             <button class="btn btn-red text-white w-200 mr-auto ml-auto mt-4">به فروشگاه بروید</button>
         </div>
     </a>
-    <a href="#" class="btn btn-dark font-14 text-white font-weight-bold w-150 mr-3 line-height-40">ورود / ثبت نام</a>
+    <a href="#" class="btn-register btn btn-dark font-14 text-white font-weight-bold w-150 mr-3 line-height-40">ورود / ثبت نام</a>
 
     <button class="mobile  btn btn-dark text-white"><span class="fa fa-bars"></span></button>
 </header>
@@ -429,7 +429,7 @@
                 <div class="border-dash w-75 mr-auto ml-auto"></div>
             </div>
             <div class="row bg-lightgrey p-5">
-                <div class="representation-items col-12 col-md-6 swiper" style="height: 500px;">
+                <div class="representation-items col-12 col-lg-6 swiper" style="height: 500px;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><div class="representation-item bg-light rounded-lg shadow-lg p-3">
                             <div class="d-flex align-items-center border-dash p-2 mb-2">
@@ -538,7 +538,7 @@
                     </div>
 
                 </div>
-                <div class="col-12 col-md-6"></div>
+                <div class="col-12 col-lg-6"></div>
             </div>
         </section>
 <!--        ....................................................-->
@@ -763,8 +763,12 @@
                 spaceBetween: 10,
             },
             768: {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 10,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
             },
             1024: {
                 slidesPerView: 3,
