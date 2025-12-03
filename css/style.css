@@ -28,7 +28,26 @@ a:hover{
 ul{
     list-style: none;
 }
+/* .... swiper.... */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ........................ */
 .header{
     padding: 20px;
     position: absolute;
@@ -230,17 +249,17 @@ ul{
     padding: 10px;
 }
 .project-item{
+    position: relative;
     width: 216.66px;
     height: 368px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-}
-.project-item{
-    transition: transform .4s ease;
+    border: 3px solid green;
+    transition: width 2s ease;
 }
 .project-item:hover{
-    transform: scaleX(1.5);
+    width:400px;
 }
 .bottom-0{
     bottom: 0;
@@ -255,18 +274,37 @@ ul{
     align-items: flex-end;
     padding: 12px;
 }
+.test>h4{
+    color: white;
+    font-size: 16px;
+    text-align: right;
+}
 .project-des-info1{
+    position: absolute;
     bottom: 0;
     right: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    font-size: 14px;
 }
-.project-item .project-des h3{
+.project-item .project-des-info>h3{
     color:white;
     padding: 10px;
     font-size: 16px;
     writing-mode: vertical-rl;
 }
+.project-item .project-des-info1 h3{
+    color:white;
+    padding: 10px;
+    font-size: 16px;
+    text-align: right;
+}
+
 .safetyTool-item{
     width: 300px;
     cursor: pointer;
@@ -395,4 +433,20 @@ ul{
 }
 .footer-link:hover{
     color: #EC2426;
+}
+.z-1{
+    z-index: 1;
+}
+.pink-arrow::before{
+    content: '';
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    right: -16px;
+    top: 2px;
+    background-image: url("../images/flatico/left-triangle.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+    z-index: -1;
 }

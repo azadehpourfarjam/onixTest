@@ -121,12 +121,12 @@
 </section>
 <main class="main p-2">
     <section class="container-fluid">
-        <section class="category-box p-5 shadow-grey bg-white round-10">
-            <div class="title-box d-flex align-items-center justify-content-between">
-                <h3>دسته بندی محصولات</h3>
-                <div class="border-dash w-50"></div>
-                <div class="d-flex align-items-center justify-content-between" style="width: 100px;">
-                    <button class="btn btn-lightgrey" id="next"><i class="fa fa-arrow-right"></i></button>
+        <section class="category-box p-3 shadow-grey bg-white round-10">
+            <div class="title-box d-flex align-items-center justify-content-between mb-4">
+                <h3 class="pink-arrow position-relative z-1" style="font-size: 20px">دسته بندی محصولات</h3>
+                <div class="border-dash w-75 mr-2 ml-2"></div>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-lightgrey ml-2" id="next"><i class="fa fa-arrow-right"></i></button>
                     <button class="btn btn-red" id="prev"><i class="fa fa-arrow-left"></i></button>
                 </div>
             </div>
@@ -184,7 +184,7 @@
 <!--        ..........................-->
         <section class="projects-box mt-5">
             <div class="title-box d-flex align-items-center justify-content-between mb-2">
-                <h3>پروژه های ما</h3>
+                <h3 class="position-relative z-1 pink-arrow">پروژه های ما</h3>
                 <div class="border-dash w-50"></div>
                 <div class="d-flex align-items-center justify-content-between" style="width: 100px">
                     <button class="btn btn-lightgrey" id="project_next"><i class="fa fa-arrow-right"></i></button>
@@ -192,20 +192,40 @@
                 </div>
                 <a href="#" class="btn btn-lightgrey text-dark font-17">مشاهده همه</a>
             </div>
-            <div class="projItems-box">
-                <div class="project-item position-relative">
-                    <img src="./images/projects-images/p1.jpg" class="img-fluid h-100" alt="">
-                    <div class="project-des project-des-info border border-danger">
-                        <button class="btn btn-red btn-sm"><span class="fa fa-arrow-left"></span></button>
-                        <h3 class="">پروژه ساخت بلن آرمه</h3>
+            <div class="project-items-box swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="project-item">
+                        <img src="./images/projects-images/p1.jpg" class="img-fluid h-100" alt="">
+                        <div class="project-des project-des-info border border-danger">
+                            <button class="btn btn-red btn-sm"><span class="fa fa-arrow-left"></span></button>
+                            <h3 class="">پروژه ساخت بلن آرمه</h3>
+                        </div>
                     </div>
                 </div>
+                    <div class="swiper-slide"><div class="project-item">
+                        <img src="./images/projects-images/p1.jpg" class="img-fluid h-100" alt="">
+                        <div class="project-des project-des-info border border-danger">
+                            <button class="btn btn-red btn-sm"><span class="fa fa-arrow-left"></span></button>
+                            <h3 class="">پروژه ساخت بلن آرمه</h3>
+                        </div>
+                    </div></div>
+                    <div class="swiper-slide"><div class="project-item">
+                        <img src="./images/projects-images/p1.jpg" class="img-fluid h-100" alt="">
+                        <div class="project-des project-des-info border border-danger">
+                            <button class="btn btn-red btn-sm"><span class="fa fa-arrow-left"></span></button>
+                            <h3 class="">پروژه ساخت بلن آرمه</h3>
+                        </div>
+                    </div></div>
+                </div>
+
+
             </div>
         </section>
         <!--    ........................................-->
         <section class="safety-tools-box mt-5">
             <div class="title-box d-flex align-items-center justify-content-between mb-2">
-                <h3>تجهیزات ایمنی</h3>
+                <h3 class="position-relative z-1 pink-arrow">تجهیزات ایمنی</h3>
                 <div class="border-dash w-50"></div>
                 <div class="d-flex align-items-center justify-content-between position-relative" style="width: 100px">
                     <button class="btn btn-lightgrey" id="safe-item-next"><i class="fa fa-arrow-right"></i></button>
@@ -342,7 +362,7 @@
 <!--       ......................................................................-->
         <section class="team-box mt-5 p-3">
             <div class="title-box d-flex align-items-center mb-2">
-                <h3>تیم ما</h3>
+                <h3 class="position-relative z-1 pink-arrow">تیم ما</h3>
                 <div class="border-dash w-75 mr-auto ml-auto"></div>
             </div>
             <section class="swiper teamElements-box mt-5 p-3">
@@ -425,7 +445,7 @@
 <!--        .........................................................-->
         <section class="representation-box mt-5 p-3">
             <div class="title-box d-flex align-items-center justify-content-between mb-2">
-                <h3>نمایندگی ما</h3>
+                <h3 class="position-relative z-1 pink-arrow">نمایندگی ما</h3>
                 <div class="border-dash w-75 mr-auto ml-auto"></div>
             </div>
             <div class="row bg-lightgrey p-5">
@@ -544,7 +564,7 @@
 <!--        ....................................................-->
         <section class="weblog-box mt-5 p-3">
             <div class="title-box d-flex align-items-center justify-content-between mb-2">
-                <h3>وبلاگ ما</h3>
+                <h3 class="position-relative z-1 pink-arrow">وبلاگ ما</h3>
                 <div class="border-dash w-50"></div>
                 <div class="d-flex align-items-center justify-content-between" style="width: 100px">
                     <button class="btn btn-lightgrey" id="blog-item-next"><i class="fa fa-arrow-right"></i></button>
@@ -776,7 +796,12 @@
             },
         },
     });
-    // ................
+    // .........................................................
+    let projectItemsBox=new Swiper(".project-items-box",{
+        slidesPerView: 3,
+        spaceBetween: 10,
+    });
+    //........................................................
     let safetyTool_items = new Swiper(".safetyTool-items", {
         slidesPerView: 3,
         spaceBetween: 10,
