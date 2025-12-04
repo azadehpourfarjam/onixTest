@@ -2,7 +2,10 @@ let mobile=document.querySelector('.mobile');
 let closeBtn=document.querySelector('.close-btn');
 let navBox=document.querySelector('.nav-box');
 let navWrapper=document.querySelector('.nav-wrapper');
-
+//...........................................................
+$(document).ready(function (){
+     $('.loader').fadeOut(5000);
+});
 
 //..............................................
 let itemMenu=$(".item-menu");
