@@ -37,11 +37,18 @@ $(".safetyTool-item").hover(function (){
         'justify-content':'space-between'
     });
 });
-//......................................................................
+//+......................................................................
 mobile.addEventListener('click',function (){
     navWrapper.style.display='block';
     setTimeout(function (){
-        navBox.style.right=0
+        navBox.style.right=0;
+        document.querySelectorAll('.item-menu').forEach(elem=>{
+            elem.children[0].children[0].classList.remove('fa-chevron-down');
+            elem.children[0].children[0].classList.add('fa-chevron-left');
+        })
+        //  document.querySelector('.item-menu>a>i').classList.remove('fa-chevron-down');
+        // document.querySelector('.item-menu>a>i').classList.add('fa-chevron-left');
+
     },200);
 });
 
@@ -63,12 +70,12 @@ $('.project-item').hover(function (){
     this.children[1].style.height='100%';
     this.children[1].innerHTML='';
     this.children[1].innerHTML=''+'<div class="test">'+
-        '<h4 style="">پروژه ساخت بتن آرمه</h4>'+
     '<div class="project-des-info1 w-100">' +
         '<div><span style="display: block;">کارفرما</span><span>امیر محمدی</span></div>'+
         '<div><span style="display: block;">تاریخ شروع</span><span class="farsiDigit" style="direction: rtl;">03/05/1404</span></div>'+
         '<div><span style="display: block;">تاریخ پایان</span><span class="farsiDigit">03/05/1404</span></div>'+
         '</div>'+
+        '<div style="height: 70px;">پروژه ساخت بتن آرمه</div>'+
         '</div>'
     ;
 },

@@ -345,13 +345,17 @@ ul{
     right:calc(50% - 80px);
     transition: all .5s ease;
 }
-/*media query*/
+/*........... media query............. */
 @media (max-width: 991.98px) {
     #next , #prev{
         display: none;
     }
     .btn-register{
-        margin-left: 10px;
+        position: relative !important;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        left: 20px;
     }
     .category-box{
         width: 70%;
@@ -389,14 +393,15 @@ ul{
         right:-1000px;
         top:0;
         width: 400px;
-        height: 400px;
-        padding: 10px 5px;
+        height: 450px;
+        padding:15px 7px;
         background-color: white;
         transition: all .5s ease;
     }
     .sub-nav-box{
         display: block!important;
         width: 100%;
+        text-align: right;
     }
     .top-nav{
         display: block;
@@ -407,10 +412,8 @@ ul{
     }
      .top-nav>li{
          display: block;
-         border: 2px solid black;
          height: 40px;
          margin-bottom: 5px;
-         background-color: lightpink;
      }
     .top-nav>li>a{
         width: 100%;
@@ -418,16 +421,17 @@ ul{
         line-height: 20px;
         text-align: right !important;
         color: black;
-        font-size: 15px !important;
+        font-size: 17px !important;
         font-weight: 600;
         padding:15px 5px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         position: relative;
-        background-color: #007aff;
     }
     .profile-box{
         display: block;
+        color: black !important;
     }
 }
 /*end media query*/
