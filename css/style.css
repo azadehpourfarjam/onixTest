@@ -74,16 +74,27 @@ ul{
 .mobile{
     display: none;
 }
-.nav-wrapper{
-    flex: 1;
-}
+/*........... media ............... */
 
-.header .top-nav{
-    padding: 20px;
-    direction: rtl;
-    position: relative;
-    top: 10px;
+@media (min-width: 992px) {
+    .header .top-nav{
+        padding: 20px;
+        direction: rtl;
+        position: relative;
+        top: 10px;
+    }
+    .btn-register{
+        position: absolute;
+        left: 20px;
+    }
+    .sub-nav-box{
+        width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
 }
+/* ............................. */
 .close-box{
     display: none;
 }
@@ -134,9 +145,13 @@ ul{
 .card-box{
     position: relative;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid lightgray;
     border-radius: 10px;
+}
+.card-box>div:first-child>span{
+    color: black;
+    font-size: 35px;
 }
 .sub-card{
     padding: 10px;
@@ -236,6 +251,7 @@ ul{
     z-index: 1;
 }
 .category-box{
+
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -372,18 +388,43 @@ ul{
         position: absolute;
         right:-1000px;
         top:0;
-        width: 300px;
+        width: 400px;
         height: 400px;
         padding: 10px 5px;
         background-color: white;
         transition: all .5s ease;
     }
     .sub-nav-box{
+        display: block!important;
+        width: 100%;
+    }
+    .top-nav{
         display: block;
     }
 
+    .top-nav,.top-nav>li,.top-nav>li>a{
+        width: 100%;
+    }
+     .top-nav>li{
+         display: block;
+         border: 2px solid black;
+         height: 40px;
+         margin-bottom: 5px;
+         background-color: lightpink;
+     }
     .top-nav>li>a{
+        width: 100%;
+        height: 100%;
+        line-height: 20px;
+        text-align: right !important;
         color: black;
+        font-size: 15px !important;
+        font-weight: 600;
+        padding:15px 5px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: #007aff;
     }
     .profile-box{
         display: block;
