@@ -123,6 +123,7 @@ ul{
     position: absolute;
     right: 0;
     top: calc(100% + 5px);
+    z-index: 1;
     display: none;
 }
 .sub-menu>ul>li{
@@ -353,6 +354,7 @@ ul{
     #next , #prev{
         display: none;
     }
+
     .btn-register{
         position: relative !important;
         display: block;
@@ -378,9 +380,11 @@ ul{
         display: block;
         margin-bottom: 10px;
         direction: ltr;
+        background-color: #EC2426;
     }
     .close-btn{
         display: block;
+        font-size: 22px;
     }
     .nav-wrapper{
         position: absolute;
