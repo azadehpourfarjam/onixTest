@@ -184,6 +184,9 @@ ul{
 .font-22{
     font-size: 22px;
 }
+.font-25{
+    font-size: 25px;
+}
 .font-12{
     font-size: 12px;
 }
@@ -255,8 +258,6 @@ ul{
     z-index: 1;
 }
 .category-box{
-
-    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }

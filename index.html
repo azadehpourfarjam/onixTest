@@ -127,10 +127,10 @@
 </section>
 <main class="main p-2">
     <section class="container-fluid">
-        <section class="category-box p-3 shadow-grey bg-white round-10">
-            <div class="title-box d-flex align-items-center justify-content-between mb-4">
-                <h3 class="pink-arrow position-relative z-1" style="font-size: 20px">دسته بندی محصولات</h3>
-                <div class="border-dash w-75 mr-2 ml-2"></div>
+        <section class="category-box p-5 shadow-grey bg-white round-10 w-100">
+            <div class="title-box d-flex align-items-center justify-content-between mb-5">
+                <h3 class="position-relative z-1 pink-arrow text-right font-25 font-weight-bold">دسته بندی محصولات</h3>
+                <div class="border-dash w-50 mr-auto ml-auto"></div>
                 <div class="d-flex align-items-center">
                     <button class="btn btn-lightgrey ml-2" id="next"><i class="fa fa-arrow-right"></i></button>
                     <button class="btn btn-red" id="prev"><i class="fa fa-arrow-left"></i></button>
@@ -141,42 +141,45 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                          <div class="cat-item d-flex flex-column align-items-center justify-content-center">
-                                <img src="./images/flatico/paint-tool.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <img src="./images/flatico/paint-tool.png" class="d-block" style="width: 20px;height: 32px" alt="">
                                 <h3 class="font-14 mt-3">ابزارآلات جابجایی</h3>
                                 <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
 
-                            </div></div>
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="cat-item d-flex flex-column align-items-center justify-content-center">
-                                <img src="./images/flatico/driller.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <img src="./images/flatico/driller.png" class="d-block img-fluid" style="width: 20px;height: 32px" alt="">
                                 <h3 class="font-14 mt-3">ابزارآلات شارژی</h3>
                                 <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
 
                             </div></div>
                         <div class="swiper-slide">
                             <div class="cat-item d-flex flex-column align-items-center justify-content-center">
-                                <img src="./images/flatico/paint-tool.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <img src="./images/flatico/paint-tool.png" class="d-block" style="width: 20px;height: 32px" alt="">
                                 <h3 class="font-14 mt-3">ابزارآلات جابجایی</h3>
                                 <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
 
-                            </div></div>
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="cat-item d-flex flex-column align-items-center justify-content-center">
-                                <img src="./images/flatico/driller.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <img src="./images/flatico/driller.png" class="d-block img-fluid" style="width: 20px;height: 32px" alt="">
                                 <h3 class="font-14 mt-3">ابزارآلات شارژی</h3>
                                 <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
 
                             </div></div>
                         <div class="swiper-slide">
                             <div class="cat-item d-flex flex-column align-items-center justify-content-center">
-                                <img src="./images/flatico/paint-tool.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <img src="./images/flatico/paint-tool.png" class="d-block" style="width: 20px;height: 32px" alt="">
                                 <h3 class="font-14 mt-3">ابزارآلات جابجایی</h3>
                                 <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
 
-                            </div></div>
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="cat-item d-flex flex-column align-items-center justify-content-center">
-                                <img src="./images/flatico/driller.png" class="d-block img-fluid" width="20" height="32" alt="">
+                                <img src="./images/flatico/driller.png" class="d-block img-fluid" style="width: 20px;height: 32px" alt="">
                                 <h3 class="font-14 mt-3">ابزارآلات شارژی</h3>
                                 <a href="#" class="btn font-12 color-grey">مشاهده قیمت</a>
 
@@ -748,7 +751,7 @@
 
 <script>
     let swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 10,
         navigation: {
             nextEl: "#next",
@@ -760,17 +763,17 @@
                 spaceBetween: 10,
             },
             768: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false,
-                },
-            },
-            1024: {
                 slidesPerView: 3,
                 spaceBetween: 10,
             },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+        },
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
         },
     });
     // .........................................................
