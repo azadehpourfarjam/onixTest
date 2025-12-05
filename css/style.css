@@ -349,10 +349,29 @@ ul{
     right:calc(50% - 80px);
     transition: all .5s ease;
 }
+.off-news{
+ display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 /*........... media query............. */
 @media (max-width: 991.98px) {
     #next , #prev{
         display: none;
+    }
+    .off-news{
+        display: block;
+        padding: 20px;
+    }
+    .off-news h3{
+        text-align: center;
+    }
+    .off-news form{
+        width: 300px;
+        margin: 20px auto auto auto;
+    }
+    .off-news form input[type='text']{
+        margin-bottom: 10px;
     }
 
     .btn-register{
